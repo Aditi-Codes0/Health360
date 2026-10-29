@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='Clean Patient Data (Health 360)' inline='true' name='clean_patient_data' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_patient_data' name='textscan.1'>
+            <connection class='textscan' directory='../outputs/tableau' filename='clean_patient_data.csv'>
+            </connection>
+          </named-connection>
+        </named-connections>
+      </connection>
+      <column datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column datatype='real' name='[bmi]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[systolic_bp]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[diastolic_bp]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[cholesterol]' role='measure' type='quantitative' />
+      <column datatype='real' name='[fasting_glucose]' role='measure' type='quantitative' />
+      <column datatype='string' name='[smoking_status]' role='dimension' type='nominal' />
+      <column datatype='string' name='[alcohol_consumption]' role='dimension' type='nominal' />
+      <column datatype='string' name='[physical_activity]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[fatigue]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[chest_pain]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[dizziness]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[heart_disease]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[diabetes]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[stroke]' role='measure' type='quantitative' />
+      <column datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column datatype='string' name='[bmi_category]' role='dimension' type='nominal' />
+    </datasource>
+    <datasource caption='Disease Prevalence (Health 360)' inline='true' name='disease_prevalence' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='disease_prevalence' name='textscan.2'>
+            <connection class='textscan' directory='../outputs/tableau' filename='disease_prevalence.csv'>
+            </connection>
+          </named-connection>
+        </named-connections>
+      </connection>
+      <column datatype='string' name='[Disease]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Positive_Cases]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total_Records]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Prevalence_Pct]' role='measure' type='quantitative' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='WS1_Disease_Prevalence'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='disease_prevalence' />
+          </datasources>
+          <datasource-dependencies datasource='disease_prevalence'>
+            <column datatype='string' name='[Disease]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Prevalence_Pct]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <rows>[disease_prevalence].[Disease]</rows>
+          <cols>[disease_prevalence].[Prevalence_Pct]</cols>
+        </view>
+      </table>
+    </worksheet>
+    <worksheet name='WS2_Biomarker_Distributions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='clean_patient_data' />
+          </datasources>
+          <datasource-dependencies datasource='clean_patient_data'>
+            <column datatype='integer' name='[heart_disease]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[systolic_bp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <rows>[clean_patient_data].[systolic_bp]</rows>
+          <cols>[clean_patient_data].[heart_disease]</cols>
+        </view>
+      </table>
+    </worksheet>
+    <worksheet name='WS3_Glucose_BMI_Scatter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='clean_patient_data' />
+          </datasources>
+          <datasource-dependencies datasource='clean_patient_data'>
+            <column datatype='real' name='[bmi]' role='measure' type='quantitative' />
+            <column datatype='real' name='[fasting_glucose]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[diabetes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <rows>[clean_patient_data].[fasting_glucose]</rows>
+          <cols>[clean_patient_data].[bmi]</cols>
+        </view>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1 - Clinical Risk Assessment'>
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='2' name='WS1_Disease_Prevalence' w='98000' x='1000' y='1000'>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 2 - Lifestyle and Risk Factor Analysis'>
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='3' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='4' name='WS2_Biomarker_Distributions' w='98000' x='1000' y='1000'>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 3 - Population Health Insights'>
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='5' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='6' name='WS3_Glucose_BMI_Scatter' w='98000' x='1000' y='1000'>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='dashboard' name='Dashboard 1 - Clinical Risk Assessment'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>

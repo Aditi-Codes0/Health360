@@ -1,0 +1,20 @@
+Column Name,Standardized Name,Data Type,Units,Description,Missing %,Unique Values,Sample Value,Treatment Strategy
+patient_id,patient_id,str,categorical_id,Unique anonymized patient identifier,0.0%,10000,P00001,drop_if_missing
+age,age,int64,years,Patient age in completed years,0.0%,71,60,median_imputation
+sex,sex,str,categorical,Biological sex of the patient,0.0%,2,Male,mode_imputation
+region,region,str,categorical,Geographic census region of residence,0.0%,4,Northeast,unknown_category
+observation_year,observation_year,int64,year,Year of clinical surveillance observation,0.0%,3,2023,mode_imputation
+bmi,bmi,float64,kg/m^2,Body Mass Index calculated as weight / height^2,1.5%,363,33.5,median_by_age_sex
+systolic_bp,systolic_bp,int64,mmHg,Resting systolic arterial blood pressure,0.0%,91,128,median_imputation
+diastolic_bp,diastolic_bp,int64,mmHg,Resting diastolic arterial blood pressure,0.0%,60,100,median_imputation
+cholesterol,cholesterol,int64,mg/dL,Serum total cholesterol measurement,0.0%,187,218,median_imputation
+fasting_glucose,fasting_glucose,float64,mg/dL,Fasting blood plasma glucose level,1.2%,1396,100.2,median_by_diabetes_status
+smoking_status,smoking_status,str,categorical,"Tobacco smoking status (Never, Former, Current)",0.85%,3,Former,unknown_category
+alcohol_consumption,alcohol_consumption,str,categorical,"Alcohol drinking habits (Non-drinker, Moderate, Heavy)",0.0%,3,Moderate,unknown_category
+physical_activity,physical_activity,str,categorical,Weekly exercise and physical activity tier,0.0%,3,Moderate,unknown_category
+fatigue,fatigue,int64,binary_flag,"Self-reported persistent physical fatigue or tiredness (0=No, 1=Yes)",0.0%,2,0,zero_imputation
+chest_pain,chest_pain,int64,binary_flag,"Clinical symptom of angina or chest discomfort (0=No, 1=Yes)",0.0%,2,0,zero_imputation
+dizziness,dizziness,int64,binary_flag,"Reported lightheadedness or vertigo symptom (0=No, 1=Yes)",0.0%,2,0,zero_imputation
+heart_disease,heart_disease,int64,binary_target,"Physician-diagnosed coronary heart disease status (0=No, 1=Yes)",0.0%,2,0,drop_if_missing
+diabetes,diabetes,int64,binary_target,"Physician-diagnosed diabetes mellitus status (0=No, 1=Yes)",0.0%,2,0,drop_if_missing
+stroke,stroke,int64,binary_target,"History of cerebrovascular accident / stroke (0=No, 1=Yes)",0.0%,2,0,drop_if_missing

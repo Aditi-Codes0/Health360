@@ -1,0 +1,22 @@
+Column Name,Raw Missing Count,Cleaned Missing Count,Imputation Strategy,Imputed Value,Raw Data Type,Cleaned Data Type
+patient_id,0,0,None (Complete),N/A,str,str
+age,0,0,None (Complete),N/A,int64,int64
+sex,0,0,None (Complete),N/A,str,str
+region,0,0,None (Complete),N/A,str,str
+observation_year,0,0,None (Complete),N/A,int64,int64
+bmi,150,0,median,27.7,float64,float64
+systolic_bp,0,0,None (Complete),N/A,int64,int64
+diastolic_bp,0,0,None (Complete),N/A,int64,int64
+cholesterol,0,0,None (Complete),N/A,int64,int64
+fasting_glucose,120,0,median,98.7,float64,float64
+smoking_status,85,0,explicit_category,Unknown,str,str
+alcohol_consumption,0,0,None (Complete),N/A,str,str
+physical_activity,0,0,None (Complete),N/A,str,str
+fatigue,0,0,None (Complete),N/A,int64,int64
+chest_pain,0,0,None (Complete),N/A,int64,int64
+dizziness,0,0,None (Complete),N/A,int64,int64
+heart_disease,0,0,None (Complete),N/A,int64,int64
+diabetes,0,0,None (Complete),N/A,int64,int64
+stroke,0,0,None (Complete),N/A,int64,int64
+age_group,0,0,Derived Categorical Variable,N/A,Not in Raw,str
+bmi_category,0,0,Derived Categorical Variable,N/A,Not in Raw,str

@@ -1,0 +1,16 @@
+Disease,Biomarker,Positive_Count,Positive_Mean,Positive_Std,Positive_Median,Negative_Count,Negative_Mean,Negative_Std,Negative_Median,Mean_Difference
+Heart Disease,Bmi,983,29.3,6.76,28.7,9017,28.22,6.18,27.7,1.08
+Heart Disease,Systolic Bp,983,144.75,12.35,145.0,9017,136.55,12.68,137.0,8.2
+Heart Disease,Diastolic Bp,983,98.02,8.24,98.0,9017,94.45,8.11,94.0,3.57
+Heart Disease,Cholesterol,983,204.6,32.86,203.0,9017,191.26,32.35,192.0,13.34
+Heart Disease,Fasting Glucose,983,120.97,40.53,104.8,9017,105.38,29.96,98.3,15.59
+Diabetes,Bmi,1635,31.23,6.89,30.5,8365,27.76,5.95,27.3,3.47
+Diabetes,Systolic Bp,1635,143.44,12.39,143.0,8365,136.16,12.64,136.0,7.27
+Diabetes,Diastolic Bp,1635,97.73,8.13,98.0,8365,94.23,8.09,94.0,3.5
+Diabetes,Cholesterol,1635,198.11,33.01,198.0,8365,191.49,32.46,192.0,6.62
+Diabetes,Fasting Glucose,1635,164.47,35.55,165.3,8365,95.66,12.84,95.7,68.81
+Stroke,Bmi,621,29.07,6.7,28.5,9379,28.28,6.21,27.7,0.8
+Stroke,Systolic Bp,621,145.32,12.47,145.0,9379,136.83,12.73,137.0,8.5
+Stroke,Diastolic Bp,621,98.13,8.1,98.0,9379,94.58,8.15,94.0,3.54
+Stroke,Cholesterol,621,201.1,33.3,200.0,9379,192.0,32.52,192.0,9.1
+Stroke,Fasting Glucose,621,131.6,45.43,111.8,9379,105.28,29.64,98.4,26.33

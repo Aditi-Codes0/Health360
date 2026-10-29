@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Large datasets & temporary files
+*.tmp
+*.log
+
+# Models
+models/*.joblib
+!models/.gitkeep
+
+# OS specific
+.DS_Store
+Thumbs.db

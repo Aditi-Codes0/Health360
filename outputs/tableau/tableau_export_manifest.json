@@ -1,0 +1,282 @@
+{
+  "project_name": "Health 360",
+  "pipeline_version": "1.0.0",
+  "generated_timestamp_utc": "2026-10-20T15:03:53.241928+00:00",
+  "exported_files_count": 13,
+  "manifest": [
+    {
+      "file_name": "clean_patient_data.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\clean_patient_data.csv",
+      "description": "Granular patient-level cohort containing demographic, clinical, lifestyle, and disease outcomes for interactive slicing.",
+      "analytical_grain": "Patient Grain (1 row per patient)",
+      "target_dashboard": "Dashboard 1, 2, 3",
+      "row_count": 10000,
+      "column_count": 21,
+      "columns": [
+        "patient_id",
+        "age",
+        "sex",
+        "region",
+        "observation_year",
+        "bmi",
+        "systolic_bp",
+        "diastolic_bp",
+        "cholesterol",
+        "fasting_glucose",
+        "smoking_status",
+        "alcohol_consumption",
+        "physical_activity",
+        "fatigue",
+        "chest_pain",
+        "dizziness",
+        "heart_disease",
+        "diabetes",
+        "stroke",
+        "age_group",
+        "bmi_category"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.217928+00:00"
+    },
+    {
+      "file_name": "disease_prevalence.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\disease_prevalence.csv",
+      "description": "Summary prevalence counts, rates, and 95% confidence intervals for Heart Disease, Diabetes, and Stroke.",
+      "analytical_grain": "Disease Grain (1 row per disease)",
+      "target_dashboard": "Dashboard 1: Clinical Risk Assessment",
+      "row_count": 3,
+      "column_count": 8,
+      "columns": [
+        "Disease",
+        "Disease_Key",
+        "Total_Records",
+        "Positive_Cases",
+        "Prevalence_Rate",
+        "Prevalence_Pct",
+        "CI_95_Lower_Pct",
+        "CI_95_Upper_Pct"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.219938+00:00"
+    },
+    {
+      "file_name": "age_group_analysis.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\age_group_analysis.csv",
+      "description": "Prevalence and case distribution of chronic diseases across standardized demographic age brackets.",
+      "analytical_grain": "Age Group x Disease Grain",
+      "target_dashboard": "Dashboard 1 & 3: Clinical Risk & Population Insights",
+      "row_count": 12,
+      "column_count": 6,
+      "columns": [
+        "Stratifier",
+        "Category",
+        "Disease",
+        "Total_Patients",
+        "Positive_Cases",
+        "Prevalence_Pct"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.220931+00:00"
+    },
+    {
+      "file_name": "bmi_category_analysis.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\bmi_category_analysis.csv",
+      "description": "Chronic disease prevalence across adult WHO/CDC BMI categories (Underweight, Healthy, Overweight, Obesity).",
+      "analytical_grain": "BMI Category x Disease Grain",
+      "target_dashboard": "Dashboard 1 & 3: Clinical Risk & Population Insights",
+      "row_count": 12,
+      "column_count": 6,
+      "columns": [
+        "Stratifier",
+        "Category",
+        "Disease",
+        "Total_Patients",
+        "Positive_Cases",
+        "Prevalence_Pct"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.221930+00:00"
+    },
+    {
+      "file_name": "clinical_indicator_summary.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\clinical_indicator_summary.csv",
+      "description": "Comparative central tendency (mean, median, standard deviation) for biomarkers between disease-positive and negative groups.",
+      "analytical_grain": "Biomarker x Disease Status Grain",
+      "target_dashboard": "Dashboard 1: Clinical Risk Assessment",
+      "row_count": 15,
+      "column_count": 11,
+      "columns": [
+        "Disease",
+        "Biomarker",
+        "Positive_Count",
+        "Positive_Mean",
+        "Positive_Std",
+        "Positive_Median",
+        "Negative_Count",
+        "Negative_Mean",
+        "Negative_Std",
+        "Negative_Median",
+        "Mean_Difference"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.223929+00:00"
+    },
+    {
+      "file_name": "lifestyle_analysis.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\lifestyle_analysis.csv",
+      "description": "Disease prevalence cross-tabulated against smoking habits, alcohol consumption, and physical activity levels.",
+      "analytical_grain": "Lifestyle Factor x Category x Disease Grain",
+      "target_dashboard": "Dashboard 2: Lifestyle & Risk Factor Analysis",
+      "row_count": 30,
+      "column_count": 7,
+      "columns": [
+        "Factor_Type",
+        "Factor_Name",
+        "Factor_Category",
+        "Disease",
+        "Total_Patients",
+        "Positive_Cases",
+        "Prevalence_Pct"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.224927+00:00"
+    },
+    {
+      "file_name": "symptom_analysis.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\symptom_analysis.csv",
+      "description": "Disease outcomes stratified by presence vs absence of clinical symptoms (Chest Pain, Fatigue, Dizziness).",
+      "analytical_grain": "Symptom x Status x Disease Grain",
+      "target_dashboard": "Dashboard 2: Lifestyle & Risk Factor Analysis",
+      "row_count": 18,
+      "column_count": 7,
+      "columns": [
+        "Factor_Type",
+        "Symptom_Name",
+        "Symptom_Status",
+        "Disease",
+        "Total_Patients",
+        "Positive_Cases",
+        "Prevalence_Pct"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.226928+00:00"
+    },
+    {
+      "file_name": "correlation_matrix.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\correlation_matrix.csv",
+      "description": "Pairwise Pearson correlation coefficients among continuous clinical indicators and disease flags.",
+      "analytical_grain": "Variable Pair Grain",
+      "target_dashboard": "Dashboard 2: Lifestyle & Risk Factor Analysis",
+      "row_count": 144,
+      "column_count": 3,
+      "columns": [
+        "Variable_1",
+        "Variable_2",
+        "Pearson_Correlation"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.232933+00:00"
+    },
+    {
+      "file_name": "risk_factor_associations.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\risk_factor_associations.csv",
+      "description": "Contingency odds ratios, 95% confidence intervals, and hypothesis test p-values for major risk factors.",
+      "analytical_grain": "Risk Factor x Disease Grain",
+      "target_dashboard": "Dashboard 2: Lifestyle & Risk Factor Analysis",
+      "row_count": 18,
+      "column_count": 11,
+      "columns": [
+        "Risk_Factor",
+        "Disease",
+        "Exposed_Positive",
+        "Exposed_Negative",
+        "Unexposed_Positive",
+        "Unexposed_Negative",
+        "Odds_Ratio",
+        "OR_95_CI_Lower",
+        "OR_95_CI_Upper",
+        "P_Value",
+        "Statistical_Significance"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.234929+00:00"
+    },
+    {
+      "file_name": "population_segments.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\population_segments.csv",
+      "description": "Demographic and behavioral risk clusters identifying high-burden population sub-segments.",
+      "analytical_grain": "Age x BMI x Smoking Segment Grain",
+      "target_dashboard": "Dashboard 3: Population Health Insights",
+      "row_count": 46,
+      "column_count": 11,
+      "columns": [
+        "Age_Group",
+        "BMI_Category",
+        "Smoking_Status",
+        "Cohort_Size",
+        "Heart_Disease_Cases",
+        "Heart_Disease_Prevalence_Pct",
+        "Diabetes_Cases",
+        "Diabetes_Prevalence_Pct",
+        "Stroke_Cases",
+        "Stroke_Prevalence_Pct",
+        "Any_Condition_Prevalence_Pct"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.236930+00:00"
+    },
+    {
+      "file_name": "model_metrics.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\model_metrics.csv",
+      "description": "Predictive model performance on held-out test data (Accuracy, Recall, Specificity, F1, ROC-AUC, PR-AUC).",
+      "analytical_grain": "Model x Disease Grain",
+      "target_dashboard": "Model Performance Specification & Validation",
+      "row_count": 3,
+      "column_count": 15,
+      "columns": [
+        "Disease",
+        "Disease_Key",
+        "Model_Algorithm",
+        "Test_Sample_Size",
+        "True_Positives",
+        "False_Positives",
+        "True_Negatives",
+        "False_Negatives",
+        "Accuracy",
+        "Sensitivity_Recall",
+        "Specificity",
+        "Precision",
+        "F1_Score",
+        "ROC_AUC",
+        "PR_AUC"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.237930+00:00"
+    },
+    {
+      "file_name": "feature_importance.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\feature_importance.csv",
+      "description": "Relative feature importances and standardized risk predictor weights extracted from trained algorithms.",
+      "analytical_grain": "Feature x Disease Grain",
+      "target_dashboard": "Predictive Insights & Feature Drivers",
+      "row_count": 99,
+      "column_count": 5,
+      "columns": [
+        "Disease",
+        "Feature_Raw",
+        "Feature_Name",
+        "Importance_Score",
+        "Metric_Type"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.239928+00:00"
+    },
+    {
+      "file_name": "data_quality_report.csv",
+      "target_path": "D:\\Health360\\outputs\\tableau\\data_quality_report.csv",
+      "description": "Data cleansing and transformation audit log detailing missingness treatment, derivations, and data types.",
+      "analytical_grain": "Column Grain",
+      "target_dashboard": "Data Governance & Audit",
+      "row_count": 21,
+      "column_count": 7,
+      "columns": [
+        "Column Name",
+        "Raw Missing Count",
+        "Cleaned Missing Count",
+        "Imputation Strategy",
+        "Imputed Value",
+        "Raw Data Type",
+        "Cleaned Data Type"
+      ],
+      "generated_at_utc": "2026-10-20T15:03:53.240929+00:00"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "datasets": {
+    "health360_primary_cohort": {
+      "name": "Health 360 Primary Multi-Condition Cohort",
+      "provenance": "CDC BRFSS / NHANES Epidemiologically Calibrated Population Cohort",
+      "fields": [
+        {
+          "source_column": "patient_id",
+          "standardized_name": "patient_id",
+          "data_type": "string",
+          "description": "Unique anonymized patient identifier",
+          "units": "categorical_id",
+          "missing_value_treatment": "drop_if_missing",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "age",
+          "standardized_name": "age",
+          "data_type": "integer",
+          "description": "Patient age in completed years",
+          "units": "years",
+          "missing_value_treatment": "median_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "sex",
+          "standardized_name": "sex",
+          "data_type": "string",
+          "description": "Biological sex of the patient",
+          "units": "categorical",
+          "missing_value_treatment": "mode_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "region",
+          "standardized_name": "region",
+          "data_type": "string",
+          "description": "Geographic census region of residence",
+          "units": "categorical",
+          "missing_value_treatment": "unknown_category",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "observation_year",
+          "standardized_name": "observation_year",
+          "data_type": "integer",
+          "description": "Year of clinical surveillance observation",
+          "units": "year",
+          "missing_value_treatment": "mode_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "bmi",
+          "standardized_name": "bmi",
+          "data_type": "float",
+          "description": "Body Mass Index calculated as weight / height^2",
+          "units": "kg/m^2",
+          "missing_value_treatment": "median_by_age_sex",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "systolic_bp",
+          "standardized_name": "systolic_bp",
+          "data_type": "integer",
+          "description": "Resting systolic arterial blood pressure",
+          "units": "mmHg",
+          "missing_value_treatment": "median_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "diastolic_bp",
+          "standardized_name": "diastolic_bp",
+          "data_type": "integer",
+          "description": "Resting diastolic arterial blood pressure",
+          "units": "mmHg",
+          "missing_value_treatment": "median_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "cholesterol",
+          "standardized_name": "cholesterol",
+          "data_type": "integer",
+          "description": "Serum total cholesterol measurement",
+          "units": "mg/dL",
+          "missing_value_treatment": "median_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "fasting_glucose",
+          "standardized_name": "fasting_glucose",
+          "data_type": "float",
+          "description": "Fasting blood plasma glucose level",
+          "units": "mg/dL",
+          "missing_value_treatment": "median_by_diabetes_status",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "smoking_status",
+          "standardized_name": "smoking_status",
+          "data_type": "string",
+          "description": "Tobacco smoking status (Never, Former, Current)",
+          "units": "categorical",
+          "missing_value_treatment": "unknown_category",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "alcohol_consumption",
+          "standardized_name": "alcohol_consumption",
+          "data_type": "string",
+          "description": "Alcohol drinking habits (Non-drinker, Moderate, Heavy)",
+          "units": "categorical",
+          "missing_value_treatment": "unknown_category",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "physical_activity",
+          "standardized_name": "physical_activity",
+          "data_type": "string",
+          "description": "Weekly exercise and physical activity tier",
+          "units": "categorical",
+          "missing_value_treatment": "unknown_category",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "fatigue",
+          "standardized_name": "fatigue",
+          "data_type": "integer",
+          "description": "Self-reported persistent physical fatigue or tiredness (0=No, 1=Yes)",
+          "units": "binary_flag",
+          "missing_value_treatment": "zero_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "chest_pain",
+          "standardized_name": "chest_pain",
+          "data_type": "integer",
+          "description": "Clinical symptom of angina or chest discomfort (0=No, 1=Yes)",
+          "units": "binary_flag",
+          "missing_value_treatment": "zero_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "dizziness",
+          "standardized_name": "dizziness",
+          "data_type": "integer",
+          "description": "Reported lightheadedness or vertigo symptom (0=No, 1=Yes)",
+          "units": "binary_flag",
+          "missing_value_treatment": "zero_imputation",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "heart_disease",
+          "standardized_name": "heart_disease",
+          "data_type": "integer",
+          "description": "Physician-diagnosed coronary heart disease status (0=No, 1=Yes)",
+          "units": "binary_target",
+          "missing_value_treatment": "drop_if_missing",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "diabetes",
+          "standardized_name": "diabetes",
+          "data_type": "integer",
+          "description": "Physician-diagnosed diabetes mellitus status (0=No, 1=Yes)",
+          "units": "binary_target",
+          "missing_value_treatment": "drop_if_missing",
+          "availability_status": "available"
+        },
+        {
+          "source_column": "stroke",
+          "standardized_name": "stroke",
+          "data_type": "integer",
+          "description": "History of cerebrovascular accident / stroke (0=No, 1=Yes)",
+          "units": "binary_target",
+          "missing_value_treatment": "drop_if_missing",
+          "availability_status": "available"
+        }
+      ]
+    },
+    "benchmark_stroke": {
+      "name": "Kaggle Clinical Stroke Dataset",
+      "provenance": "Kaggle Open Healthcare Stroke Dataset (N=5,110)",
+      "fields": [
+        {"source_column": "id", "standardized_name": "patient_id", "data_type": "integer", "units": "id", "availability_status": "available"},
+        {"source_column": "gender", "standardized_name": "sex", "data_type": "string", "units": "categorical", "availability_status": "available"},
+        {"source_column": "age", "standardized_name": "age", "data_type": "float", "units": "years", "availability_status": "available"},
+        {"source_column": "hypertension", "standardized_name": "hypertension", "data_type": "integer", "units": "binary_flag", "availability_status": "available"},
+        {"source_column": "heart_disease", "standardized_name": "heart_disease", "data_type": "integer", "units": "binary_target", "availability_status": "available"},
+        {"source_column": "Residence_type", "standardized_name": "region_type", "data_type": "string", "units": "categorical", "availability_status": "available"},
+        {"source_column": "avg_glucose_level", "standardized_name": "fasting_glucose", "data_type": "float", "units": "mg/dL", "availability_status": "available"},
+        {"source_column": "bmi", "standardized_name": "bmi", "data_type": "float", "units": "kg/m^2", "availability_status": "available"},
+        {"source_column": "smoking_status", "standardized_name": "smoking_status", "data_type": "string", "units": "categorical", "availability_status": "available"},
+        {"source_column": "stroke", "standardized_name": "stroke", "data_type": "integer", "units": "binary_target", "availability_status": "available"},
+        {"source_column": "cholesterol", "standardized_name": "cholesterol", "data_type": "none", "units": "none", "availability_status": "not_available"},
+        {"source_column": "fatigue", "standardized_name": "fatigue", "data_type": "none", "units": "none", "availability_status": "not_available"},
+        {"source_column": "chest_pain", "standardized_name": "chest_pain", "data_type": "none", "units": "none", "availability_status": "not_available"},
+        {"source_column": "dizziness", "standardized_name": "dizziness", "data_type": "none", "units": "none", "availability_status": "not_available"}
+      ]
+    },
+    "benchmark_heart": {
+      "name": "UCI Cleveland Heart Disease Dataset",
+      "provenance": "UCI Machine Learning Repository (Detrano et al., N=303)",
+      "fields": [
+        {"source_column": "age", "standardized_name": "age", "data_type": "integer", "units": "years", "availability_status": "available"},
+        {"source_column": "sex", "standardized_name": "sex", "data_type": "integer", "units": "binary_sex", "availability_status": "available"},
+        {"source_column": "cp", "standardized_name": "chest_pain_type", "data_type": "integer", "units": "categorical", "availability_status": "available"},
+        {"source_column": "trestbps", "standardized_name": "systolic_bp", "data_type": "integer", "units": "mmHg", "availability_status": "available"},
+        {"source_column": "chol", "standardized_name": "cholesterol", "data_type": "integer", "units": "mg/dL", "availability_status": "available"},
+        {"source_column": "fbs", "standardized_name": "fasting_blood_sugar_high", "data_type": "integer", "units": "binary_flag", "availability_status": "available"},
+        {"source_column": "target", "standardized_name": "heart_disease", "data_type": "integer", "units": "binary_target", "availability_status": "available"},
+        {"source_column": "stroke", "standardized_name": "stroke", "data_type": "none", "units": "none", "availability_status": "not_available"},
+        {"source_column": "diabetes", "standardized_name": "diabetes", "data_type": "none", "units": "none", "availability_status": "not_available"}
+      ]
+    },
+    "benchmark_diabetes": {
+      "name": "Pima Indians Diabetes Dataset",
+      "provenance": "National Institute of Diabetes and Digestive and Kidney Diseases (N=768)",
+      "fields": [
+        {"source_column": "Age", "standardized_name": "age", "data_type": "integer", "units": "years", "availability_status": "available"},
+        {"source_column": "Glucose", "standardized_name": "fasting_glucose", "data_type": "float", "units": "mg/dL", "availability_status": "available"},
+        {"source_column": "BloodPressure", "standardized_name": "diastolic_bp", "data_type": "float", "units": "mmHg", "availability_status": "available"},
+        {"source_column": "BMI", "standardized_name": "bmi", "data_type": "float", "units": "kg/m^2", "availability_status": "available"},
+        {"source_column": "Outcome", "standardized_name": "diabetes", "data_type": "integer", "units": "binary_target", "availability_status": "available"},
+        {"source_column": "heart_disease", "standardized_name": "heart_disease", "data_type": "none", "units": "none", "availability_status": "not_available"},
+        {"source_column": "stroke", "standardized_name": "stroke", "data_type": "none", "units": "none", "availability_status": "not_available"}
+      ]
+    }
+  }
+}

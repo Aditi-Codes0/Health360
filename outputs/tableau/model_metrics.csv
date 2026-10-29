@@ -1,0 +1,4 @@
+Disease,Disease_Key,Model_Algorithm,Test_Sample_Size,True_Positives,False_Positives,True_Negatives,False_Negatives,Accuracy,Sensitivity_Recall,Specificity,Precision,F1_Score,ROC_AUC,PR_AUC
+Heart Disease,heart_disease,Logistic Regression,2000,152,533,1270,45,0.711,0.7716,0.7044,0.2219,0.3447,0.8048,0.3503
+Diabetes,diabetes,Logistic Regression,2000,298,84,1589,29,0.9435,0.9113,0.9498,0.7801,0.8406,0.9718,0.9455
+Stroke,stroke,Logistic Regression,2000,91,470,1406,33,0.7485,0.7339,0.7495,0.1622,0.2657,0.8093,0.3004

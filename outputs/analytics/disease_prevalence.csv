@@ -1,0 +1,4 @@
+Disease,Disease_Key,Total_Records,Positive_Cases,Prevalence_Rate,Prevalence_Pct,CI_95_Lower_Pct,CI_95_Upper_Pct
+Heart Disease,heart_disease,0,0,0.0,0.0,0.0,0.0
+Diabetes,diabetes,0,0,0.0,0.0,0.0,0.0
+Stroke,stroke,0,0,0.0,0.0,0.0,0.0

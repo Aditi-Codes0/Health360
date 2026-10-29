@@ -1,0 +1,23 @@
+# Health 360: Chronic Disease Analytics, Risk Factor Analysis, and Predictive Insights
+# Dependencies
+
+# Core scientific and data analysis
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.12.0
+statsmodels>=0.14.0
+
+# Machine Learning
+scikit-learn>=1.4.0
+joblib>=1.3.0
+
+# Data Visualization and Reporting
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# Testing and Code Quality
+pytest>=8.0.0
+
+# Utilities
+python-dateutil>=2.8.2

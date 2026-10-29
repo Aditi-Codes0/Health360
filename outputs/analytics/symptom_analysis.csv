@@ -1,0 +1,19 @@
+Factor_Type,Symptom_Name,Symptom_Status,Disease,Total_Patients,Positive_Cases,Prevalence_Pct
+Symptom,Fatigue,Absent,Heart Disease,7232,638,8.82
+Symptom,Fatigue,Absent,Diabetes,7232,923,12.76
+Symptom,Fatigue,Absent,Stroke,7232,396,5.48
+Symptom,Fatigue,Present,Heart Disease,2768,345,12.46
+Symptom,Fatigue,Present,Diabetes,2768,712,25.72
+Symptom,Fatigue,Present,Stroke,2768,225,8.13
+Symptom,Chest Pain,Absent,Heart Disease,8002,597,7.46
+Symptom,Chest Pain,Absent,Diabetes,8002,1265,15.81
+Symptom,Chest Pain,Absent,Stroke,8002,456,5.7
+Symptom,Chest Pain,Present,Heart Disease,1998,386,19.32
+Symptom,Chest Pain,Present,Diabetes,1998,370,18.52
+Symptom,Chest Pain,Present,Stroke,1998,165,8.26
+Symptom,Dizziness,Absent,Heart Disease,8333,774,9.29
+Symptom,Dizziness,Absent,Diabetes,8333,1230,14.76
+Symptom,Dizziness,Absent,Stroke,8333,473,5.68
+Symptom,Dizziness,Present,Heart Disease,1667,209,12.54
+Symptom,Dizziness,Present,Diabetes,1667,405,24.3
+Symptom,Dizziness,Present,Stroke,1667,148,8.88

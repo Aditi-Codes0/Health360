@@ -1,0 +1,100 @@
+Disease,Feature_Raw,Feature_Name,Importance_Score,Metric_Type
+Heart Disease,num__age,Age,0.6917,Absolute_Coefficient
+Heart Disease,cat__smoking_status_Current,Smoking Status Current,0.5066,Absolute_Coefficient
+Heart Disease,cat__sex_Female,Sex Female,0.3648,Absolute_Coefficient
+Heart Disease,cat__smoking_status_Unknown,Smoking Status Unknown,0.3556,Absolute_Coefficient
+Heart Disease,num__chest_pain,Chest Pain,0.3345,Absolute_Coefficient
+Heart Disease,cat__smoking_status_Never,Smoking Status Never,0.3278,Absolute_Coefficient
+Heart Disease,cat__alcohol_consumption_Heavy,Alcohol Consumption Heavy,0.2932,Absolute_Coefficient
+Heart Disease,cat__bmi_category_Underweight,Bmi Category Underweight,0.2641,Absolute_Coefficient
+Heart Disease,cat__physical_activity_Active,Physical Activity Active,0.2426,Absolute_Coefficient
+Heart Disease,num__fasting_glucose,Fasting Glucose,0.2377,Absolute_Coefficient
+Heart Disease,cat__bmi_category_Obesity,Bmi Category Obesity,0.2067,Absolute_Coefficient
+Heart Disease,cat__age_group_Under 30,Age Group Under 30,0.2055,Absolute_Coefficient
+Heart Disease,num__systolic_bp,Systolic Bp,0.1985,Absolute_Coefficient
+Heart Disease,num__cholesterol,Cholesterol,0.1985,Absolute_Coefficient
+Heart Disease,cat__sex_Male,Sex Male,0.1878,Absolute_Coefficient
+Heart Disease,cat__bmi_category_Overweight,Bmi Category Overweight,0.1685,Absolute_Coefficient
+Heart Disease,cat__age_group_60 and above,Age Group 60 And Above,0.1387,Absolute_Coefficient
+Heart Disease,cat__region_Midwest,Region Midwest,0.1044,Absolute_Coefficient
+Heart Disease,num__fatigue,Fatigue,0.0943,Absolute_Coefficient
+Heart Disease,cat__alcohol_consumption_Non-Drinker,Alcohol Consumption Non-Drinker,0.0903,Absolute_Coefficient
+Heart Disease,num__diastolic_bp,Diastolic Bp,0.0885,Absolute_Coefficient
+Heart Disease,num__bmi,Bmi,0.0868,Absolute_Coefficient
+Heart Disease,cat__age_group_30-44,Age Group 30-44,0.0703,Absolute_Coefficient
+Heart Disease,cat__bmi_category_Healthy Weight,Bmi Category Healthy Weight,0.0658,Absolute_Coefficient
+Heart Disease,cat__region_West,Region West,0.0532,Absolute_Coefficient
+Heart Disease,num__dizziness,Dizziness,0.0494,Absolute_Coefficient
+Heart Disease,cat__age_group_45-59,Age Group 45-59,0.0399,Absolute_Coefficient
+Heart Disease,cat__physical_activity_Sedentary,Physical Activity Sedentary,0.0332,Absolute_Coefficient
+Heart Disease,cat__physical_activity_Moderate,Physical Activity Moderate,0.0324,Absolute_Coefficient
+Heart Disease,cat__region_South,Region South,0.0289,Absolute_Coefficient
+Heart Disease,cat__alcohol_consumption_Moderate,Alcohol Consumption Moderate,0.0259,Absolute_Coefficient
+Heart Disease,cat__region_Northeast,Region Northeast,0.0095,Absolute_Coefficient
+Heart Disease,cat__smoking_status_Former,Smoking Status Former,0.0001,Absolute_Coefficient
+Diabetes,num__fasting_glucose,Fasting Glucose,3.3785,Absolute_Coefficient
+Diabetes,cat__physical_activity_Active,Physical Activity Active,0.5985,Absolute_Coefficient
+Diabetes,cat__smoking_status_Former,Smoking Status Former,0.4713,Absolute_Coefficient
+Diabetes,num__age,Age,0.4647,Absolute_Coefficient
+Diabetes,cat__physical_activity_Sedentary,Physical Activity Sedentary,0.46,Absolute_Coefficient
+Diabetes,cat__alcohol_consumption_Heavy,Alcohol Consumption Heavy,0.3498,Absolute_Coefficient
+Diabetes,cat__smoking_status_Unknown,Smoking Status Unknown,0.3364,Absolute_Coefficient
+Diabetes,num__bmi,Bmi,0.324,Absolute_Coefficient
+Diabetes,cat__smoking_status_Never,Smoking Status Never,0.3176,Absolute_Coefficient
+Diabetes,cat__bmi_category_Healthy Weight,Bmi Category Healthy Weight,0.3175,Absolute_Coefficient
+Diabetes,cat__physical_activity_Moderate,Physical Activity Moderate,0.3094,Absolute_Coefficient
+Diabetes,cat__age_group_45-59,Age Group 45-59,0.2706,Absolute_Coefficient
+Diabetes,cat__age_group_Under 30,Age Group Under 30,0.2623,Absolute_Coefficient
+Diabetes,cat__sex_Female,Sex Female,0.2594,Absolute_Coefficient
+Diabetes,cat__region_Northeast,Region Northeast,0.2182,Absolute_Coefficient
+Diabetes,num__systolic_bp,Systolic Bp,0.2035,Absolute_Coefficient
+Diabetes,cat__region_South,Region South,0.1898,Absolute_Coefficient
+Diabetes,cat__sex_Male,Sex Male,0.1885,Absolute_Coefficient
+Diabetes,cat__age_group_30-44,Age Group 30-44,0.1583,Absolute_Coefficient
+Diabetes,num__dizziness,Dizziness,0.1516,Absolute_Coefficient
+Diabetes,cat__bmi_category_Underweight,Bmi Category Underweight,0.135,Absolute_Coefficient
+Diabetes,cat__region_Midwest,Region Midwest,0.1183,Absolute_Coefficient
+Diabetes,num__fatigue,Fatigue,0.1139,Absolute_Coefficient
+Diabetes,cat__bmi_category_Obesity,Bmi Category Obesity,0.1022,Absolute_Coefficient
+Diabetes,cat__bmi_category_Overweight,Bmi Category Overweight,0.0977,Absolute_Coefficient
+Diabetes,cat__region_West,Region West,0.0784,Absolute_Coefficient
+Diabetes,cat__age_group_60 and above,Age Group 60 And Above,0.0734,Absolute_Coefficient
+Diabetes,cat__alcohol_consumption_Non-Drinker,Alcohol Consumption Non-Drinker,0.0657,Absolute_Coefficient
+Diabetes,num__chest_pain,Chest Pain,0.0655,Absolute_Coefficient
+Diabetes,num__cholesterol,Cholesterol,0.0405,Absolute_Coefficient
+Diabetes,cat__alcohol_consumption_Moderate,Alcohol Consumption Moderate,0.0324,Absolute_Coefficient
+Diabetes,num__diastolic_bp,Diastolic Bp,0.0291,Absolute_Coefficient
+Diabetes,cat__smoking_status_Current,Smoking Status Current,0.0046,Absolute_Coefficient
+Stroke,num__age,Age,1.0499,Absolute_Coefficient
+Stroke,cat__smoking_status_Unknown,Smoking Status Unknown,0.6696,Absolute_Coefficient
+Stroke,cat__smoking_status_Current,Smoking Status Current,0.4394,Absolute_Coefficient
+Stroke,num__fasting_glucose,Fasting Glucose,0.4232,Absolute_Coefficient
+Stroke,cat__physical_activity_Moderate,Physical Activity Moderate,0.222,Absolute_Coefficient
+Stroke,cat__bmi_category_Overweight,Bmi Category Overweight,0.2194,Absolute_Coefficient
+Stroke,cat__age_group_60 and above,Age Group 60 And Above,0.2108,Absolute_Coefficient
+Stroke,cat__alcohol_consumption_Heavy,Alcohol Consumption Heavy,0.1921,Absolute_Coefficient
+Stroke,cat__region_West,Region West,0.1867,Absolute_Coefficient
+Stroke,num__systolic_bp,Systolic Bp,0.1836,Absolute_Coefficient
+Stroke,cat__bmi_category_Obesity,Bmi Category Obesity,0.1455,Absolute_Coefficient
+Stroke,cat__bmi_category_Underweight,Bmi Category Underweight,0.1241,Absolute_Coefficient
+Stroke,cat__sex_Female,Sex Female,0.1192,Absolute_Coefficient
+Stroke,cat__sex_Male,Sex Male,0.1012,Absolute_Coefficient
+Stroke,num__dizziness,Dizziness,0.0897,Absolute_Coefficient
+Stroke,cat__smoking_status_Former,Smoking Status Former,0.086,Absolute_Coefficient
+Stroke,num__chest_pain,Chest Pain,0.077,Absolute_Coefficient
+Stroke,cat__smoking_status_Never,Smoking Status Never,0.0762,Absolute_Coefficient
+Stroke,cat__region_Northeast,Region Northeast,0.063,Absolute_Coefficient
+Stroke,cat__physical_activity_Active,Physical Activity Active,0.0465,Absolute_Coefficient
+Stroke,cat__physical_activity_Sedentary,Physical Activity Sedentary,0.045,Absolute_Coefficient
+Stroke,num__diastolic_bp,Diastolic Bp,0.041,Absolute_Coefficient
+Stroke,num__fatigue,Fatigue,0.0354,Absolute_Coefficient
+Stroke,cat__age_group_45-59,Age Group 45-59,0.0342,Absolute_Coefficient
+Stroke,cat__region_South,Region South,0.0264,Absolute_Coefficient
+Stroke,cat__bmi_category_Healthy Weight,Bmi Category Healthy Weight,0.0204,Absolute_Coefficient
+Stroke,cat__age_group_30-44,Age Group 30-44,0.0196,Absolute_Coefficient
+Stroke,cat__alcohol_consumption_Moderate,Alcohol Consumption Moderate,0.017,Absolute_Coefficient
+Stroke,num__bmi,Bmi,0.0137,Absolute_Coefficient
+Stroke,cat__alcohol_consumption_Non-Drinker,Alcohol Consumption Non-Drinker,0.0113,Absolute_Coefficient
+Stroke,num__cholesterol,Cholesterol,0.009,Absolute_Coefficient
+Stroke,cat__age_group_Under 30,Age Group Under 30,0.005,Absolute_Coefficient
+Stroke,cat__region_Midwest,Region Midwest,0.0028,Absolute_Coefficient

@@ -1,0 +1,31 @@
+Factor_Type,Factor_Name,Factor_Category,Disease,Total_Patients,Positive_Cases,Prevalence_Pct
+Lifestyle,Smoking Status,Current,Heart Disease,1739,256,14.72
+Lifestyle,Smoking Status,Current,Diabetes,1739,286,16.45
+Lifestyle,Smoking Status,Current,Stroke,1739,144,8.28
+Lifestyle,Smoking Status,Former,Heart Disease,2768,295,10.66
+Lifestyle,Smoking Status,Former,Diabetes,2768,462,16.69
+Lifestyle,Smoking Status,Former,Stroke,2768,186,6.72
+Lifestyle,Smoking Status,Never,Heart Disease,5408,424,7.84
+Lifestyle,Smoking Status,Never,Diabetes,5408,874,16.16
+Lifestyle,Smoking Status,Never,Stroke,5408,288,5.33
+Lifestyle,Smoking Status,Unknown,Heart Disease,85,8,9.41
+Lifestyle,Smoking Status,Unknown,Diabetes,85,13,15.29
+Lifestyle,Smoking Status,Unknown,Stroke,85,3,3.53
+Lifestyle,Alcohol Consumption,Heavy,Heart Disease,984,88,8.94
+Lifestyle,Alcohol Consumption,Heavy,Diabetes,984,153,15.55
+Lifestyle,Alcohol Consumption,Heavy,Stroke,984,60,6.1
+Lifestyle,Alcohol Consumption,Moderate,Heart Disease,4220,410,9.72
+Lifestyle,Alcohol Consumption,Moderate,Diabetes,4220,678,16.07
+Lifestyle,Alcohol Consumption,Moderate,Stroke,4220,259,6.14
+Lifestyle,Alcohol Consumption,Non-Drinker,Heart Disease,4796,485,10.11
+Lifestyle,Alcohol Consumption,Non-Drinker,Diabetes,4796,804,16.76
+Lifestyle,Alcohol Consumption,Non-Drinker,Stroke,4796,302,6.3
+Lifestyle,Physical Activity,Active,Heart Disease,2368,187,7.9
+Lifestyle,Physical Activity,Active,Diabetes,2368,251,10.6
+Lifestyle,Physical Activity,Active,Stroke,2368,140,5.91
+Lifestyle,Physical Activity,Moderate,Heart Disease,4390,444,10.11
+Lifestyle,Physical Activity,Moderate,Diabetes,4390,674,15.35
+Lifestyle,Physical Activity,Moderate,Stroke,4390,252,5.74
+Lifestyle,Physical Activity,Sedentary,Heart Disease,3242,352,10.86
+Lifestyle,Physical Activity,Sedentary,Diabetes,3242,710,21.9
+Lifestyle,Physical Activity,Sedentary,Stroke,3242,229,7.06

@@ -1,0 +1,13 @@
+Stratifier,Category,Disease,Total_Patients,Positive_Cases,Prevalence_Pct
+age_group,30-44,Heart Disease,2399,68,2.83
+age_group,30-44,Diabetes,2399,202,8.42
+age_group,30-44,Stroke,2399,35,1.46
+age_group,45-59,Heart Disease,3610,250,6.93
+age_group,45-59,Diabetes,3610,554,15.35
+age_group,45-59,Stroke,3610,149,4.13
+age_group,60 and above,Heart Disease,3181,655,20.59
+age_group,60 and above,Diabetes,3181,844,26.53
+age_group,60 and above,Stroke,3181,434,13.64
+age_group,Under 30,Heart Disease,810,10,1.23
+age_group,Under 30,Diabetes,810,35,4.32
+age_group,Under 30,Stroke,810,3,0.37

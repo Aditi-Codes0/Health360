@@ -1,0 +1,47 @@
+Age_Group,BMI_Category,Smoking_Status,Cohort_Size,Heart_Disease_Cases,Heart_Disease_Prevalence_Pct,Diabetes_Cases,Diabetes_Prevalence_Pct,Stroke_Cases,Stroke_Prevalence_Pct,Any_Condition_Prevalence_Pct
+60 and above,Obesity,Current,189,56,29.63,79,41.8,36,19.05,57.67
+60 and above,Obesity,Former,291,76,26.12,111,38.14,48,16.49,52.92
+60 and above,Obesity,Never,614,134,21.82,244,39.74,94,15.31,52.77
+60 and above,Overweight,Current,196,60,30.61,44,22.45,39,19.9,45.92
+60 and above,Overweight,Former,282,66,23.4,73,25.89,38,13.48,45.74
+60 and above,Healthy Weight,Current,141,43,30.5,18,12.77,11,7.8,40.43
+60 and above,Underweight,Current,15,2,13.33,1,6.67,5,33.33,40.0
+60 and above,Underweight,Former,30,9,30.0,4,13.33,3,10.0,40.0
+45-59,Obesity,Current,218,28,12.84,62,28.44,16,7.34,39.45
+60 and above,Healthy Weight,Former,266,50,18.8,43,16.17,47,17.67,37.59
+60 and above,Overweight,Never,610,86,14.1,138,22.62,61,10.0,34.75
+60 and above,Healthy Weight,Never,473,54,11.42,77,16.28,46,9.73,30.02
+45-59,Obesity,Former,351,28,7.98,78,22.22,19,5.41,29.34
+60 and above,Underweight,Never,52,11,21.15,7,13.46,3,5.77,28.85
+45-59,Obesity,Never,713,55,7.71,154,21.6,21,2.95,27.35
+45-59,Overweight,Current,194,26,13.4,25,12.89,11,5.67,26.8
+45-59,Healthy Weight,Current,190,18,9.47,17,8.95,15,7.89,22.63
+45-59,Overweight,Former,324,21,6.48,53,16.36,7,2.16,22.53
+30-44,Obesity,Former,223,4,1.79,38,17.04,4,1.79,20.18
+45-59,Overweight,Never,639,25,3.91,88,13.77,26,4.07,19.72
+45-59,Underweight,Current,27,2,7.41,2,7.41,1,3.7,18.52
+30-44,Obesity,Current,161,10,6.21,17,10.56,2,1.24,17.39
+30-44,Obesity,Never,450,14,3.11,62,13.78,8,1.78,17.33
+45-59,Healthy Weight,Former,284,22,7.75,19,6.69,11,3.87,16.55
+45-59,Underweight,Never,59,2,3.39,3,5.08,4,6.78,15.25
+45-59,Healthy Weight,Never,548,22,4.01,48,8.76,17,3.1,13.87
+Under 30,Obesity,Current,59,2,3.39,7,11.86,1,1.69,13.56
+Under 30,Obesity,Former,89,1,1.12,11,12.36,0,0.0,13.48
+30-44,Overweight,Former,227,10,4.41,17,7.49,2,0.88,12.33
+45-59,Underweight,Former,34,1,2.94,2,5.88,1,2.94,11.76
+30-44,Overweight,Current,137,2,1.46,11,8.03,2,1.46,10.95
+30-44,Healthy Weight,Former,198,6,3.03,10,5.05,5,2.53,10.61
+30-44,Healthy Weight,Current,109,6,5.5,3,2.75,3,2.75,10.09
+30-44,Overweight,Never,404,8,1.98,24,5.94,3,0.74,8.42
+30-44,Healthy Weight,Never,373,8,2.14,15,4.02,4,1.07,6.7
+Under 30,Underweight,Never,15,1,6.67,0,0.0,0,0.0,6.67
+30-44,Underweight,Current,16,0,0.0,0,0.0,1,6.25,6.25
+Under 30,Obesity,Never,158,2,1.27,6,3.8,1,0.63,5.7
+Under 30,Overweight,Current,40,1,2.5,0,0.0,1,2.5,5.0
+Under 30,Healthy Weight,Never,114,0,0.0,5,4.39,0,0.0,4.39
+30-44,Underweight,Former,27,0,0.0,1,3.7,1,3.7,3.7
+Under 30,Healthy Weight,Former,55,0,0.0,2,3.64,0,0.0,3.64
+Under 30,Overweight,Never,140,2,1.43,3,2.14,0,0.0,2.86
+Under 30,Overweight,Former,82,1,1.22,0,0.0,0,0.0,1.22
+30-44,Underweight,Never,46,0,0.0,0,0.0,0,0.0,0.0
+Under 30,Healthy Weight,Current,46,0,0.0,0,0.0,0,0.0,0.0

@@ -1,0 +1,13 @@
+Stratifier,Category,Disease,Total_Patients,Positive_Cases,Prevalence_Pct
+bmi_category,Healthy Weight,Heart Disease,2826,232,8.21
+bmi_category,Healthy Weight,Diabetes,2826,260,9.2
+bmi_category,Healthy Weight,Stroke,2826,160,5.66
+bmi_category,Obesity,Heart Disease,3546,412,11.62
+bmi_category,Obesity,Diabetes,3546,874,24.65
+bmi_category,Obesity,Stroke,3546,251,7.08
+bmi_category,Overweight,Heart Disease,3298,310,9.4
+bmi_category,Overweight,Diabetes,3298,480,14.55
+bmi_category,Overweight,Stroke,3298,191,5.79
+bmi_category,Underweight,Heart Disease,330,29,8.79
+bmi_category,Underweight,Diabetes,330,21,6.36
+bmi_category,Underweight,Stroke,330,19,5.76

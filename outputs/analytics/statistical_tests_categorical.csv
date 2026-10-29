@@ -1,0 +1,19 @@
+Factor,Disease,Test_Type,Statistic,Degrees_Freedom,P_Value_Raw,Effect_Size_Type,Effect_Size,P_Value_Adjusted_FDR,Significant_FDR
+smoking_status,heart_disease,Chi-Square Independence,4.08,2,0.13004168071273292,Cramer's V,0.144,0.544795,False
+smoking_status,diabetes,Chi-Square Independence,5.731,2,0.05695481322247052,Cramer's V,0.194,0.341729,False
+smoking_status,stroke,Chi-Square Independence,3.549,2,0.16955163203273405,Cramer's V,0.124,0.544795,False
+physical_activity,heart_disease,Chi-Square Independence,7.923,2,0.01903287404000859,Cramer's V,0.244,0.341729,False
+physical_activity,diabetes,Chi-Square Independence,0.871,2,0.6467924349321412,Cramer's V,0.0,0.898181,False
+physical_activity,stroke,Chi-Square Independence,1.604,2,0.4483483986901966,Cramer's V,0.0,0.807027,False
+age_group,heart_disease,Chi-Square Independence,4.397,3,0.22162087310015716,Cramer's V,0.118,0.55829,False
+age_group,diabetes,Chi-Square Independence,1.205,3,0.7518206212616909,Cramer's V,0.0,0.966627,False
+age_group,stroke,Chi-Square Independence,4.87,3,0.1815984387450081,Cramer's V,0.136,0.544795,False
+bmi_category,heart_disease,Chi-Square Independence,2.788,2,0.24812899686183404,Cramer's V,0.088,0.55829,False
+bmi_category,diabetes,Chi-Square Independence,6.445,2,0.03985680576895253,Cramer's V,0.211,0.341729,False
+bmi_category,stroke,Chi-Square Independence,0.101,2,0.9508317904219838,Cramer's V,0.0,1.0,False
+sex,heart_disease,Chi-Square Independence,0.0,1,1.0,Cramer's V,0.0,1.0,False
+sex,diabetes,Chi-Square Independence,0.662,1,0.41585792039423275,Cramer's V,0.0,0.807027,False
+sex,stroke,Chi-Square Independence,0.385,1,0.5350152104095718,Cramer's V,0.0,0.875479,False
+region,heart_disease,Chi-Square Independence,0.099,3,0.9920036619153022,Cramer's V,0.0,1.0,False
+region,diabetes,Chi-Square Independence,1.647,3,0.6486859697853189,Cramer's V,0.0,0.898181,False
+region,stroke,Chi-Square Independence,0.335,3,0.953366951354055,Cramer's V,0.0,1.0,False
